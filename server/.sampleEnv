@@ -1,6 +1,6 @@
 
 
-MONGO_URI = mongodb://localhost:27017
+MONGO_URI = mongodb+srv://dbuser:qwerty123@linkupcluster.mhity.mongodb.net/?retryWrites=true&w=majority&appName=linkupcluster
 
 JWT_SECRET=djgjkdshbgjkhfnjksdfhbnsjkdfsdhjfk
 

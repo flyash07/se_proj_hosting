@@ -295,6 +295,7 @@ const Groups = () => {
           alignItems: "center",
           position: "relative",
           padding: "1rem 3rem",
+          backgroundColor: "antiquewhite"
         }}
       >
         {IconBtns}
