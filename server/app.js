@@ -22,7 +22,7 @@ import { Message } from "./models/message.js";
 import { corsOptions } from "./constants/config.js";
 import { socketAuthenticator } from "./middlewares/auth.js";
 
-import {  adminSecretKey, userSocketIDs } from './constants/config.js';
+// import {  adminSecretKey, userSocketIDs } from './constants/config.js';
 import userRoute from "./routes/user.js";
 import chatRoute from "./routes/chat.js";
 import adminRoute from "./routes/admin.js";
