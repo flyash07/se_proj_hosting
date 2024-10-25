@@ -10,4 +10,10 @@ const corsOptions = {
 
 const CHATTU_TOKEN = "chattu-token";
 
+
+export const envMode = process.env.NODE_ENV;
+export const adminSecretKey = process.env.ADMIN_SECRET_KEY;
+export const userSocketIDs = new Set();
+
+
 export { corsOptions, CHATTU_TOKEN };
