@@ -33,10 +33,19 @@ dotenv.config({
 
 const mongoURI = process.env.MONGO_URI;
 const port = process.env.PORT || 3000;
-const envMode = process.env.NODE_ENV.trim() || "PRODUCTION";
-const adminSecretKey = process.env.ADMIN_SECRET_KEY || "adsasdsdfsdfsdfd";
-const userSocketIDs = new Map();
+// const envMode = process.env.NODE_ENV.trim() || "PRODUCTION";
+export const adminSecretKey = process.env.ADMIN_SECRET_KEY || "adsasdsdfsdfsdfd";
+
 const onlineUsers = new Set();
+
+// export const envMode = process.env.NODE_ENV;
+// export const adminSecretKey = process.env.ADMIN_SECRET_KEY;
+// export const userSocketIDs = new Set();
+export const userSocketIDs = new Map();
+
+export const envMode = process.env.NODE_ENV ? process.env.NODE_ENV.trim() : 'PRODUCTION';
+// export const adminSecretKey = process.env.ADMIN_SECRET_KEY || 'defaultAdminSecretKey';
+
 
 connectDB(mongoURI);
 
